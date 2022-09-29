@@ -6,7 +6,7 @@ This document specifies available test data for test case ([NAMESERVER02])..
 ## Base domain for test zones
 
 The base domain name for the test zones in this document is
-`consistency05.xa.`. All test zones are child zones the base domain name.
+`consistency05.xa.`. All test zones are child zones to the base domain name.
 
 ## Messages
 The messages are defined in the test case ([NAMESERVER02]).
@@ -46,8 +46,8 @@ F02      |Warning        |no OPT record with EDNS version 0
 The child zone name is derived from the tables above. In the first table, each combination
 defined combination of messages from the test case is given a capital letter, e.g. `A`. In
 the second table the zone file name prefix is defined, e.g. `A00`. The prefix is is prepended
-the base domain name, e.g. `A00.consistency05.data.zonemaster.se` and then a general prefix
-`zone` is added to the final domain name, e.g. `zone.A00.consistency05.data.zonemaster.se`.
+the base domain name, e.g. `A00.nameserver02.xa` and then a general prefix
+`zone` is added to the final domain name, e.g. `zone.A00.nameserver02.xa`.
 
 
 [NAMESERVER02]:                  ../../specifications/tests/Nameserver-TP/nameserver02.md
