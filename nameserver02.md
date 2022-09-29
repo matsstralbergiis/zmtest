@@ -1,12 +1,12 @@
-# Specification of test data for CONSISTENCY05
+# Specification of test data for NAMESERVER02
 
 ## Test Case
-This document specifies available test data for test case [CONSISTENCY05].
+This document specifies available test data for test case https://github.com/zonemaster/zonemaster/blob/master/docs/specifications/tests/Nameserver-TP/nameserver02.md.
 
 ## Base domain for test zones
 
 The base domain name for the test zones in this document is
-`consistency05.data.zonemaster.se.`. All test zones are child zones the base domain name.
+`consistency05.xa.`. All test zones are child zones the base domain name.
 
 ## Messages
 The messages are defined in the test case ([CONSISTENCY05]).
