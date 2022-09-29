@@ -6,7 +6,7 @@ This document specifies available test data for test case ([NAMESERVER02])..
 ## Base domain for test zones
 
 The base domain name for the test zones in this document is
-`consistency05.xa.`. All test zones are child zones to the base domain name.
+`nameserver02.xa.`. All test zones are child zones to the base domain name.
 
 ## Messages
 The messages are defined in the test case ([NAMESERVER02]).
