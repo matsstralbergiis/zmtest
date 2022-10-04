@@ -33,9 +33,9 @@ outcome is given. The default outcome is derived from the outcome section
 [NAMESERVER02].
 
 Zone file|Default outcome|Description of zone
-:--------|:--------------|:----------------------------------------------------------------------------------------------
-A00      |Debug          |No response with OPT and no response without OPT
-B00      |Error          |No response with OPT and response with OPT
+:--------|:--------------|:---------------------------------------------------|:-------------------------------------------
+A00      |Debug          |No response with OPT and no response without OPT    | Delegated to black hole
+B00      |Error          |No response with OPT and response without OPT
 C00      |Warning        |RCODE "FORMERR" and no OPT record
 D00      |Error          |RCODE "NOERROR" and no OPT record
 E00      |Error          |RCODE "NOERROR" and OPT version != 0
