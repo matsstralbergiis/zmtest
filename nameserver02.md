@@ -32,16 +32,16 @@ table below each zone file is briefly described, and its default
 outcome is given. The default outcome is derived from the outcome section
 [NAMESERVER02].
 
-Zone file|Default outcome|Description of zone
+Zone file|Default outcome|Description of zone                                 | Note
 :--------|:--------------|:---------------------------------------------------|:-------------------------------------------
 A00      |Debug          |No response with OPT and no response without OPT    | Delegated to black hole
-B00      |Error          |No response with OPT and response without OPT
-C00      |Warning        |RCODE "FORMERR" and no OPT record
-D00      |Error          |RCODE "NOERROR" and no OPT record
-E00      |Error          |RCODE "NOERROR" and OPT version != 0
-F00      |Warning        |not RCODE "NOERROR"
-F01      |Warning        |no SOA record for Child Zone
-F02      |Warning        |no OPT record with EDNS version 0
+B00      |Error          |No response with OPT and response without OPT       |
+C00      |Warning        |RCODE "FORMERR" and no OPT record                   |
+D00      |Error          |RCODE "NOERROR" and no OPT record                   |
+E00      |Error          |RCODE "NOERROR" and OPT version != 0                |
+F00      |Warning        |not RCODE "NOERROR"                                 |
+F01      |Warning        |no SOA record for Child Zone                        |
+F02      |Warning        |no OPT record with EDNS version 0                   |
 
 The child zone name is derived from the tables above. In the first table, each combination
 defined combination of messages from the test case is given a capital letter, e.g. `A`. In
