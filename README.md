@@ -6,7 +6,7 @@ Clone this repo to your test server.
 
 Run the script add-ip-to-lo.sh to add secondary addresses to your loopback interface.
 
-Make sure that coredns is installed.
+Make sure that coredns is installed. (https://github.com/coredns/coredns.io)
 
 Set upp each test case with the command listed below. You can only have one test case active for the moment.
 
