@@ -1,0 +1,66 @@
+$ORIGIN nameserver05.xa.
+$TTL 3600
+
+@       SOA     ns1.nameserver05.xa. admin.mail.xa. (
+                2022100300      ; serial
+                6h              ; refresh
+                1h              ; retry
+                1w              ; expire
+                1d )            ; minimum
+
+        NS      ns1
+	NS	ns2
+	MX      10 smtp.mail.xa.
+
+ns1	A	192.0.2.21
+ns1	AAAA	2001:db8::21
+ns2	A	192.0.2.22
+ns2	AAAA	2001:db8::22
+
+$ORIGIN NO-RESPONSE.nameserver05.xa.
+@	NS      ns1
+@       NS      ns2
+ns1	A       192.0.2.251
+ns1	AAAA    2001:db8::251
+ns2	A       192.0.2.252
+ns2	AAAA    2001:db8::252
+
+$ORIGIN A-UNEXPECTED-RCODE.nameserver05.xa.
+@       NS      ns1
+@       NS      ns2
+ns1     A       192.0.2.31
+ns1     AAAA    2001:db8::31
+ns2     A       192.0.2.32
+ns2     AAAA    2001:db8::32
+
+$ORIGIN AAAA-QUERY-DROPPED.nameserver05.xa.
+@       NS      ns1
+@       NS      ns2
+ns1     A       192.0.2.31
+ns1     AAAA    2001:db8::31
+ns2     A       192.0.2.32
+ns2     AAAA    2001:db8::32
+
+$ORIGIN AAAA-UNEXPECTED-RCODE.nameserver05.xa.
+@       NS      ns1
+@       NS      ns2
+ns1     A       192.0.2.31
+ns1     AAAA    2001:db8::31
+ns2     A       192.0.2.32
+ns2     AAAA    2001:db8::32
+
+$ORIGIN AAAA-BAD-RDATA.nameserver05.xa.
+@       NS      ns1
+@       NS      ns2
+ns1     A       192.0.2.31
+ns1     AAAA    2001:db8::31
+ns2     A       192.0.2.32
+ns2     AAAA    2001:db8::32
+
+$ORIGIN AAAA-WELL-PROCESSED.nameserver05.xa.
+@       NS      ns1
+@       NS      ns2
+ns1     A       192.0.2.31
+ns1     AAAA    2001:db8::31
+ns2     A       192.0.2.32
+ns2     AAAA    2001:db8::32
