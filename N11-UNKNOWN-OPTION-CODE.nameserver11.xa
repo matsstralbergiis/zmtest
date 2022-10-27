@@ -1,0 +1,21 @@
+$ORIGIN N11-UNKNOWN-OPTION-CODE.nameserver11.xa.
+$TTL 3600
+
+@       SOA     ns1.N11-UNKNOWN-OPTION-CODE.nameserver11.xa. admin.mail.xa. (
+                2022100300      ; serial
+                6h              ; refresh
+                1h              ; retry
+                1w              ; expire
+                1d )            ; minimum
+
+        NS      ns1
+	NS	ns2
+        NS      ns3
+	MX      10 smtp.mail.xa.
+
+ns1	A	192.0.2.31
+ns1	AAAA	2001:db8::31
+ns2	A	192.0.2.32
+ns2	AAAA	2001:db8::32
+ns3     A       192.0.2.33
+ns3     AAAA    2001:db8::33
