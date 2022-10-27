@@ -1,0 +1,32 @@
+$ORIGIN asnlookup.zonemaster.net.
+$TTL 3600
+
+@       SOA     ns1.zonemaster.net. admin.root-servers.xb. (
+                2022100300      ; serial
+                6h              ; refresh
+                1h              ; retry
+                1w              ; expire
+                1d )            ; minimum
+
+asnlookup.zonemaster.net. 306	IN	NS	ns2.asnlookup.zonemaster.net.
+asnlookup.zonemaster.net. 306	IN	NS	ns1.asnlookup.zonemaster.net.
+ns1.asnlookup.zonemaster.net. 359 IN	A	192.0.2.91
+ns2.asnlookup.zonemaster.net. 348 IN	A	192.0.2.91
+
+1.2.0.192.origin  14400 IN TXT "65536 | 192.0.2.1/32 | XA | Zonemaster | 2022-10-20"
+2.2.0.192.origin  14400 IN TXT "65537 | 192.0.2.2/32 | XA | Zonemaster | 2022-10-20"
+11.2.0.192.origin 14400 IN TXT "65536 | 192.0.2.11/32 | XA | Zonemaster | 2022-10-20"
+12.2.0.192.origin 14400 IN TXT "65537 | 192.0.2.12/32 | XA | Zonemaster | 2022-10-20"
+21.2.0.192.origin 14400 IN TXT "65536 | 192.0.2.21/32 | XA | Zonemaster | 2022-10-20"
+22.2.0.192.origin 14400 IN TXT "65537 | 192.0.2.22/32 | XA | Zonemaster | 2022-10-20"
+31.2.0.192.origin 14400 IN TXT "65536 | 192.0.2.31/32 | XA | Zonemaster | 2022-10-20"
+32.2.0.192.origin 14400 IN TXT "65537 | 192.0.2.32/32 | XA | Zonemaster | 2022-10-20"
+
+1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.8.b.d.0.1.0.0.2.origin6 14400 IN TXT "65536 | 2001:db8::1/128 | XA | Zonemaster | 2022-10-20"
+2.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.8.b.d.0.1.0.0.2.origin6 14400 IN TXT "65537 | 2001:db8::2/128 | XA | Zonemaster | 2022-10-20"
+1.1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.8.b.d.0.1.0.0.2.origin6 14400 IN TXT "65536 | 2001:db8::11/128 | XA | Zonemaster | 2022-10-20"
+2.1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.8.b.d.0.1.0.0.2.origin6 14400 IN TXT "65537 | 2001:db8::12/128 | XA | Zonemaster | 2022-10-20"
+1.2.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.8.b.d.0.1.0.0.2.origin6 14400 IN TXT "65536 | 2001:db8::21/128 | XA | Zonemaster | 2022-10-20"
+2.2.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.8.b.d.0.1.0.0.2.origin6 14400 IN TXT "65537 | 2001:db8::22/128 | XA | Zonemaster | 2022-10-20"
+1.3.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.8.b.d.0.1.0.0.2.origin6 14400 IN TXT "65536 | 2001:db8::31/128 | XA | Zonemaster | 2022-10-20"
+2.3.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.8.b.d.0.1.0.0.2.origin6 14400 IN TXT "65537 | 2001:db8::32/128 | XA | Zonemaster | 2022-10-20"

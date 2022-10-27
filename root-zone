@@ -1,0 +1,40 @@
+$ORIGIN .
+$TTL 3600
+
+@       SOA     a.root-servers.xb. admin.root-servers.xb. (
+                2022100300      ; serial
+                6h              ; refresh
+                1h              ; retry
+                1w              ; expire
+                1d )            ; minimum
+
+        NS      a.root-servers.xb.
+
+a.root-servers.xb.	A       192.0.2.1
+a.root-servers.xb.	AAAA	2001:db8::1
+
+xa	NS	ns1.xa.
+ns1.xa.	A	192.0.2.11
+ns1.xa.	AAAA	2001:db8::11
+
+xa	NS	ns2.xa.
+ns2.xa.	A	192.0.2.12
+ns2.xa.	AAAA	2001:db8::12
+
+11.2.0.192.in-addr.arpa.	PTR	ns1.xa.
+1.1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.8.b.d.0.1.0.0.2.ip6.arpa. PTR ns1.xa.
+12.2.0.192.in-addr.arpa. PTR     ns2.xa.
+2.1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.8.b.d.0.1.0.0.2.ip6.arpa. PTR ns2.xa.
+21.2.0.192.in-addr.arpa. PTR     ns1.nameserver02.xa.
+1.2.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.8.b.d.0.1.0.0.2.ip6.arpa. PTR ns1.nameserver02.xa.
+22.2.0.192.in-addr.arpa. PTR     ns2.nameserver02.xa.
+2.2.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.8.b.d.0.1.0.0.2.ip6.arpa. PTR ns2.nameserver02.xa.
+31.2.0.192.in-addr.arpa. PTR     ns1.X00.nameserver02.xa.
+1.3.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.8.b.d.0.1.0.0.2.ip6.arpa. PTR ns1.X00.nameserver02.xa.
+32.2.0.192.in-addr.arpa. PTR     ns2.X00.nameserver02.xa.
+2.3.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.8.b.d.0.1.0.0.2.ip6.arpa. PTR ns2.X00.nameserver02.xa.
+
+asnlookup.zonemaster.net. 306	IN	NS	ns2.asnlookup.zonemaster.net.
+asnlookup.zonemaster.net. 306	IN	NS	ns1.asnlookup.zonemaster.net.
+ns1.asnlookup.zonemaster.net. 359 IN	A	192.0.2.91
+ns2.asnlookup.zonemaster.net. 348 IN	A	192.0.2.91

@@ -1,0 +1,57 @@
+$ORIGIN xa.
+$TTL 3600
+
+@       SOA     ns1.xa. admin.mail.xa. (
+                2022100300      ; serial
+                6h              ; refresh
+                1h              ; retry
+                1w              ; expire
+                1d )            ; minimum
+
+        NS      ns1
+	NS	ns2
+
+ns1	A	192.0.2.11
+ns1	AAAA	2001:db8::11
+
+ns2	A	192.0.2.12
+ns2	AAAA	2001:db8::12
+
+mail	NS	ns1
+mail	NS	ns2
+
+
+nameserver02		NS	ns1.nameserver02
+nameserver02            NS      ns2.nameserver02
+ns1.nameserver02	A       192.0.2.21
+ns1.nameserver02	AAAA    2001:db8::21
+ns2.nameserver02	A       192.0.2.22
+ns2.nameserver02	AAAA    2001:db8::22
+
+nameserver03            NS      ns1.nameserver03
+nameserver03            NS      ns2.nameserver03
+ns1.nameserver03        A       192.0.2.21
+ns1.nameserver03        AAAA    2001:db8::21
+ns2.nameserver03        A       192.0.2.22
+ns2.nameserver03        AAAA    2001:db8::22
+
+nameserver05            NS      ns1.nameserver05
+nameserver05            NS      ns2.nameserver05
+ns1.nameserver05        A       192.0.2.21
+ns1.nameserver05        AAAA    2001:db8::21
+ns2.nameserver05        A       192.0.2.22
+ns2.nameserver05        AAAA    2001:db8::22
+
+nameserver07            NS      ns1.nameserver07
+nameserver07            NS      ns2.nameserver07
+ns1.nameserver07        A       192.0.2.21
+ns1.nameserver07        AAAA    2001:db8::21
+ns2.nameserver07        A       192.0.2.22
+ns2.nameserver07        AAAA    2001:db8::22
+
+nameserver11            NS      ns1.nameserver11
+nameserver11            NS      ns2.nameserver11
+ns1.nameserver11        A       192.0.2.21
+ns1.nameserver11        AAAA    2001:db8::21
+ns2.nameserver11        A       192.0.2.22
+ns2.nameserver11        AAAA    2001:db8::22

@@ -1,0 +1,63 @@
+$ORIGIN nameserver11.xa.
+$TTL 3600
+
+@       SOA     ns1.nameserver11.xa. admin.mail.xa. (
+                2022100300      ; serial
+                6h              ; refresh
+                1h              ; retry
+                1w              ; expire
+                1d )            ; minimum
+
+        NS      ns1
+	NS	ns2
+	MX      10 smtp.mail.xa.
+
+ns1	A	192.0.2.21
+ns1	AAAA	2001:db8::21
+ns2	A	192.0.2.22
+ns2	AAAA	2001:db8::22
+
+N11-UNKNOWN-OPTION-CODE     NS      ns1.N11-UNKNOWN-OPTION-CODE
+N11-UNKNOWN-OPTION-CODE     NS      ns2.N11-UNKNOWN-OPTION-CODE
+N11-UNKNOWN-OPTION-CODE     NS      ns3.N11-UNKNOWN-OPTION-CODE
+ns1.N11-UNKNOWN-OPTION-CODE A       192.0.2.31
+ns1.N11-UNKNOWN-OPTION-CODE AAAA    2001:db8::31
+ns2.N11-UNKNOWN-OPTION-CODE A       192.0.2.32
+ns2.N11-UNKNOWN-OPTION-CODE AAAA    2001:db8::32
+ns3.N11-UNKNOWN-OPTION-CODE A       192.0.2.33
+ns3.N11-UNKNOWN-OPTION-CODE AAAA    2001:db8::33
+
+B00     NS      ns1.B00
+B00     NS      ns2.B00
+ns1.B00 A       192.0.2.31
+ns1.B00 AAAA    2001:db8::31
+ns2.B00 A       192.0.2.32
+ns2.B00 AAAA    2001:db8::32
+
+C00     NS      ns1.C00
+C00     NS      ns2.C00
+ns1.C00 A       192.0.2.31
+ns1.C00 AAAA    2001:db8::31
+ns2.C00 A       192.0.2.32
+ns2.C00 AAAA    2001:db8::32
+
+D00     NS      ns1.D00
+D00     NS      ns2.D00
+ns1.D00 A       192.0.2.31
+ns1.D00 AAAA    2001:db8::31
+ns2.D00 A       192.0.2.32
+ns2.D00 AAAA    2001:db8::32
+
+E00     NS      ns1.E00
+E00     NS      ns2.E00
+ns1.E00 A       192.0.2.31
+ns1.E00 AAAA    2001:db8::31
+ns2.E00 A       192.0.2.32
+ns2.E00 AAAA    2001:db8::32
+
+F00	NS	ns1.F00
+F00     NS      ns2.F00
+ns1.F00	A	192.0.2.31
+ns1.F00	AAAA	2001:db8::31
+ns2.F00	A	192.0.2.32
+ns2.F00	AAAA	2001:db8::32
