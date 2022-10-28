@@ -1,0 +1,4 @@
+; Hint file for local DNS tree. Use with zonemaster-cli --hint local-named.root
+.                       NS      a.root-servers.xb.
+a.root-servers.xb.	A       192.0.2.1
+a.root-servers.xb.	AAAA	2001:db8::1
