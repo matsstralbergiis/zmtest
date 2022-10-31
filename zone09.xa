@@ -17,21 +17,19 @@ ns1	AAAA	2001:db8::21
 ns2	A	192.0.2.22
 ns2	AAAA	2001:db8::22
 
-$ORIGIN z09-inconsistent-mx.zone09.xa.
-	NS      ns1
-	NS      ns2
-ns1	A       192.0.2.31
-ns1	AAAA    2001:db8::31
-ns2	A       192.0.2.32
-ns2	AAAA    2001:db8::32
+z09-inconsistent-mx	NS      ns1.z09-inconsistent-mx
+z09-inconsistent-mx	NS      ns2.z09-inconsistent-mx
+ns1.z09-inconsistent-mx	A       192.0.2.31
+ns1.z09-inconsistent-mx	AAAA    2001:db8::31
+ns2.z09-inconsistent-mx	A       192.0.2.32
+ns2.z09-inconsistent-mx	AAAA    2001:db8::32
 
-$ORIGIN z09-inconsistent-mx-data.zone09.xa.
-        NS      ns1
-        NS      ns2
-ns1     A       192.0.2.31
-ns1     AAAA    2001:db8::31
-ns2     A       192.0.2.32
-ns2     AAAA    2001:db8::32
+z09-inconsistent-mx-data        NS      ns1.z09-inconsistent-mx-data
+z09-inconsistent-mx-data        NS      ns2.z09-inconsistent-mx-data
+ns1.z09-inconsistent-mx-data     A       192.0.2.31
+ns1.z09-inconsistent-mx-data     AAAA    2001:db8::31
+ns2.z09-inconsistent-mx-data     A       192.0.2.32
+ns2.z09-inconsistent-mx-data     AAAA    2001:db8::32
 
 $ORIGIN z09-missing-mail-target.zone09.xa.
         NS      ns1
