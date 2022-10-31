@@ -1,0 +1,123 @@
+$ORIGIN zone09.xa.
+$TTL 3600
+
+@       SOA     ns1 admin.mail.xa. (
+                2022100300      ; serial
+                6h              ; refresh
+                1h              ; retry
+                1w              ; expire
+                1d )            ; minimum
+
+        NS      ns1
+	NS	ns2
+	MX      10 smtp.mail.xa.
+
+ns1	A	192.0.2.21
+ns1	AAAA	2001:db8::21
+ns2	A	192.0.2.22
+ns2	AAAA	2001:db8::22
+
+$ORIGIN Z09-INCONSISTENT-MX.zone09.xa.
+	NS      ns1
+	NS      ns2
+ns1	A       192.0.2.31
+ns1	AAAA    2001:db8::31
+ns2	A       192.0.2.32
+ns2	AAAA    2001:db8::32
+
+$ORIGIN Z09-INCONSISTENT-MX-DATA.zone09.xa.
+        NS      ns1
+        NS      ns2
+ns1     A       192.0.2.31
+ns1     AAAA    2001:db8::31
+ns2     A       192.0.2.32
+ns2     AAAA    2001:db8::32
+
+$ORIGIN Z09-MISSING-MAIL-TARGET.zone09.xa.
+        NS      ns1
+        NS      ns2
+ns1     A       192.0.2.31
+ns1     AAAA    2001:db8::31
+ns2     A       192.0.2.32
+ns2     AAAA    2001:db8::32
+
+$ORIGIN Z09-MX-DATA.zone09.xa.
+        NS      ns1
+        NS      ns2
+ns1     A       192.0.2.31
+ns1     AAAA    2001:db8::31
+ns2     A       192.0.2.32
+ns2     AAAA    2001:db8::32
+
+$ORIGIN Z09-MX-FOUND.zone09.xa.
+        NS      ns1
+        NS      ns2
+ns1     A       192.0.2.31
+ns1     AAAA    2001:db8::31
+ns2     A       192.0.2.32
+ns2     AAAA    2001:db8::32
+
+$ORIGIN Z09-NON-AUTH-MX-RESPONSE.zone09.xa.
+        NS      ns1
+        NS      ns2
+ns1     A       192.0.2.31
+ns1     AAAA    2001:db8::31
+ns2     A       192.0.2.32
+ns2     AAAA    2001:db8::32
+
+$ORIGIN Z09-NO-MX-FOUND.zone09.xa.
+        NS      ns1
+        NS      ns2
+ns1     A       192.0.2.31
+ns1     AAAA    2001:db8::31
+ns2     A       192.0.2.32
+ns2     AAAA    2001:db8::32
+
+$ORIGIN Z09-NO-RESPONSE-MX-QUERY.zone09.xa.
+        NS      ns1
+        NS      ns2
+ns1     A       192.0.2.31
+ns1     AAAA    2001:db8::31
+ns2     A       192.0.2.32
+ns2     AAAA    2001:db8::32
+
+$ORIGIN Z09-NULL-MX-NON-ZERO-PREF.zone09.xa.
+        NS      ns1
+        NS      ns2
+ns1     A       192.0.2.31
+ns1     AAAA    2001:db8::31
+ns2     A       192.0.2.32
+ns2     AAAA    2001:db8::32
+
+$ORIGIN Z09-NULL-MX-WITH-OTHER-MX.zone09.xa.
+        NS      ns1
+        NS      ns2
+ns1     A       192.0.2.31
+ns1     AAAA    2001:db8::31
+ns2     A       192.0.2.32
+ns2     AAAA    2001:db8::32
+
+$ORIGIN Z09-ROOT-EMAIL-DOMAIN.zone09.xa.
+        NS      ns1
+        NS      ns2
+ns1     A       192.0.2.31
+ns1     AAAA    2001:db8::31
+ns2     A       192.0.2.32
+ns2     AAAA    2001:db8::32
+
+$ORIGIN Z09-TLD-EMAIL-DOMAIN.zone09.xa.
+        NS      ns1
+        NS      ns2
+ns1     A       192.0.2.31
+ns1     AAAA    2001:db8::31
+ns2     A       192.0.2.32
+ns2     AAAA    2001:db8::32
+
+$ORIGIN Z09-UNEXPECTED-RCODE-MX.zone09.xa.
+        NS      ns1
+        NS      ns2
+ns1     A       192.0.2.31
+ns1     AAAA    2001:db8::31
+ns2     A       192.0.2.32
+ns2     AAAA    2001:db8::32
+
