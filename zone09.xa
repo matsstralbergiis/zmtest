@@ -31,91 +31,80 @@ ns1.z09-inconsistent-mx-data     AAAA    2001:db8::31
 ns2.z09-inconsistent-mx-data     A       192.0.2.32
 ns2.z09-inconsistent-mx-data     AAAA    2001:db8::32
 
-$ORIGIN z09-missing-mail-target.zone09.xa.
-        NS      ns1
-        NS      ns2
-ns1     A       192.0.2.31
-ns1     AAAA    2001:db8::31
-ns2     A       192.0.2.32
-ns2     AAAA    2001:db8::32
+z09-missing-mail-target        NS      ns1.z09-missing-mail-target
+z09-missing-mail-target        NS      ns2.z09-missing-mail-target
+ns1.z09-missing-mail-target     A       192.0.2.31
+ns1.z09-missing-mail-target     AAAA    2001:db8::31
+ns2.z09-missing-mail-target     A       192.0.2.32
+ns2.z09-missing-mail-target     AAAA    2001:db8::32
 
-$ORIGIN z09-mx-data.zone09.xa.
-        NS      ns1
-        NS      ns2
-ns1     A       192.0.2.31
-ns1     AAAA    2001:db8::31
-ns2     A       192.0.2.32
-ns2     AAAA    2001:db8::32
+z09-mx-data        NS      ns1.z09-mx-data
+z09-mx-data        NS      ns2.z09-mx-data
+ns1.z09-mx-data     A       192.0.2.31
+ns1.z09-mx-data     AAAA    2001:db8::31
+ns2.z09-mx-data     A       192.0.2.32
+ns2.z09-mx-data     AAAA    2001:db8::32
 
-$ORIGIN z09-mx-found.zone09.xa.
-        NS      ns1
-        NS      ns2
-ns1     A       192.0.2.31
-ns1     AAAA    2001:db8::31
-ns2     A       192.0.2.32
-ns2     AAAA    2001:db8::32
+z09-mx-found        NS      ns1.z09-mx-found
+z09-mx-found        NS      ns2.z09-mx-found
+ns1.z09-mx-found     A       192.0.2.31
+ns1.z09-mx-found     AAAA    2001:db8::31
+ns2.z09-mx-found     A       192.0.2.32
+ns2.z09-mx-found     AAAA    2001:db8::32
 
-$ORIGIN z09-non-auth-mx-response.zone09.xa.
-        NS      ns1
-        NS      ns2
-ns1     A       192.0.2.31
-ns1     AAAA    2001:db8::31
-ns2     A       192.0.2.32
-ns2     AAAA    2001:db8::32
+z09-non-auth-mx-response        NS      ns1.z09-non-auth-mx-response
+z09-non-auth-mx-response        NS      ns2.z09-non-auth-mx-response
+ns1.z09-non-auth-mx-response     A       192.0.2.31
+ns1.z09-non-auth-mx-response     AAAA    2001:db8::31
+ns2.z09-non-auth-mx-response     A       192.0.2.32
+ns2.z09-non-auth-mx-response     AAAA    2001:db8::32
 
-$ORIGIN z09-no-mx-found.zone09.xa.
-        NS      ns1
-        NS      ns2
-ns1     A       192.0.2.31
-ns1     AAAA    2001:db8::31
-ns2     A       192.0.2.32
-ns2     AAAA    2001:db8::32
+z09-no-mx-found        NS      ns1.z09-no-mx-found
+z09-no-mx-found        NS      ns2.z09-no-mx-found
+ns1.z09-no-mx-found     A       192.0.2.31
+ns1.z09-no-mx-found     AAAA    2001:db8::31
+ns2.z09-no-mx-found     A       192.0.2.32
+ns2.z09-no-mx-found     AAAA    2001:db8::32
 
-$ORIGIN z09-no-response-mx-query.zone09.xa.
-        NS      ns1
-        NS      ns2
-ns1     A       192.0.2.31
-ns1     AAAA    2001:db8::31
-ns2     A       192.0.2.32
-ns2     AAAA    2001:db8::32
+z09-no-response-mx-query        NS      ns1.z09-no-response-mx-query
+z09-no-response-mx-query        NS      ns2.z09-no-response-mx-query
+ns1.z09-no-response-mx-query     A       192.0.2.31
+ns1.z09-no-response-mx-query     AAAA    2001:db8::31
+ns2.z09-no-response-mx-query     A       192.0.2.32
+ns2.z09-no-response-mx-query     AAAA    2001:db8::32
 
-$ORIGIN z09-null-mx-non-zero-pref.zone09.xa.
-        NS      ns1
-        NS      ns2
-ns1     A       192.0.2.31
-ns1     AAAA    2001:db8::31
-ns2     A       192.0.2.32
-ns2     AAAA    2001:db8::32
+z09-null-mx-non-zero-pref        NS      ns1.z09-null-mx-non-zero-pref
+z09-null-mx-non-zero-pref        NS      ns2.z09-null-mx-non-zero-pref
+ns1.z09-null-mx-non-zero-pref     A       192.0.2.31
+ns1.z09-null-mx-non-zero-pref     AAAA    2001:db8::31
+ns2.z09-null-mx-non-zero-pref     A       192.0.2.32
+ns2.z09-null-mx-non-zero-pref     AAAA    2001:db8::32
 
-$ORIGIN z09-null-mx-with-other-mx.zone09.xa.
-        NS      ns1
-        NS      ns2
-ns1     A       192.0.2.31
-ns1     AAAA    2001:db8::31
-ns2     A       192.0.2.32
-ns2     AAAA    2001:db8::32
+z09-null-mx-with-other-mx        NS      ns1.z09-null-mx-with-other-mx
+z09-null-mx-with-other-mx        NS      ns2.z09-null-mx-with-other-mx
+ns1.z09-null-mx-with-other-mx     A       192.0.2.31
+ns1.z09-null-mx-with-other-mx     AAAA    2001:db8::31
+ns2.z09-null-mx-with-other-mx     A       192.0.2.32
+ns2.z09-null-mx-with-other-mx     AAAA    2001:db8::32
 
-$ORIGIN z09-root-email-domain.zone09.xa.
-        NS      ns1
-        NS      ns2
-ns1     A       192.0.2.31
-ns1     AAAA    2001:db8::31
-ns2     A       192.0.2.32
-ns2     AAAA    2001:db8::32
+z09-root-email-domain        NS      ns1.z09-root-email-domain
+z09-root-email-domain        NS      ns2.z09-root-email-domain
+ns1.z09-root-email-domain     A       192.0.2.31
+ns1.z09-root-email-domain     AAAA    2001:db8::31
+ns2.z09-root-email-domain     A       192.0.2.32
+ns2.z09-root-email-domain     AAAA    2001:db8::32
 
-$ORIGIN z09-tld-email-domain.zone09.xa.
-        NS      ns1
-        NS      ns2
-ns1     A       192.0.2.31
-ns1     AAAA    2001:db8::31
-ns2     A       192.0.2.32
-ns2     AAAA    2001:db8::32
+z09-tld-email-domain        NS      ns1.z09-tld-email-domain
+z09-tld-email-domain        NS      ns2.z09-tld-email-domain
+ns1.z09-tld-email-domain     A       192.0.2.31
+ns1.z09-tld-email-domain     AAAA    2001:db8::31
+ns2.z09-tld-email-domain     A       192.0.2.32
+ns2.z09-tld-email-domain     AAAA    2001:db8::32
 
-$ORIGIN z09-unexpected-rcode-mx.zone09.xa.
-        NS      ns1
-        NS      ns2
-ns1     A       192.0.2.31
-ns1     AAAA    2001:db8::31
-ns2     A       192.0.2.32
-ns2     AAAA    2001:db8::32
+z09-unexpected-rcode-mx        NS      ns1.z09-unexpected-rcode-mx
+z09-unexpected-rcode-mx        NS      ns2.z09-unexpected-rcode-mx
+ns1.z09-unexpected-rcode-mx     A       192.0.2.31
+ns1.z09-unexpected-rcode-mx     AAAA    2001:db8::31
+ns2.z09-unexpected-rcode-mx     A       192.0.2.32
+ns2.z09-unexpected-rcode-mx     AAAA    2001:db8::32
 
