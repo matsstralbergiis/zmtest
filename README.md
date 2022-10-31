@@ -106,3 +106,21 @@ zonemaster-cli N11-UNKNOWN-OPTION-CODE.nameserver11.xa  --raw --level info --hin
 ```
 
 
+## Zone09:
+
+Message Tag                | Default outcome | Description of zone         | Note
+:--------------------------|:----------------|:----------------------------|:--------------------------------------------
+Z09-INCONSISTENT-MX        |WARNING          |                             | Some name servers return an MX RRset while others return none.
+Z09-INCONSISTENT-MX-DATA   |WARNING          |                             | The MX RRset data is inconsistent between the name servers.
+Z09-MISSING-MAIL-TARGET    | NOTICE          |                             | The child zone has no mail target (no MX).
+Z09-MX-DATA                | INFO            |                             | The mail targets in the MX RRset, "{mailtarget-list}", as returned by name servers.
+Z09-MX-FOUND               | INFO            |                             | MX RRset was returned by name servers "{ns-ip-list}".
+Z09-NON-AUTH-MX-RESPONSE   |WARNING          |                             | Non-authoritative response on MX query from name servers "{ns-ip-list}".
+Z09-NO-MX-FOUND            | INFO            |                             | No MX RRset was returned by name servers "{ns-ip-list}".
+Z09-NO-RESPONSE-MX-QUERY   |WARNING          |                             | No response on MX query from name servers "{ns-ip-list}".
+Z09-NULL-MX-NON-ZERO-PREF  | NOTICE          |                             | The zone has a Null MX with non-zero preference.
+Z09-NULL-MX-WITH-OTHER-MX  |WARNING          |                             | The zone has a Null MX mixed with other MX records.
+Z09-ROOT-EMAIL-DOMAIN      | NOTICE          |                             | Root zone with an unexpected MX RRset (non-Null MX).
+Z09-TLD-EMAIL-DOMAIN       |WARNING          |                             | The zone is a TLD and has an unexpected MX RRset (non-Null MX).
+Z09-UNEXPECTED-RCODE-MX    |WARNING          |                             | Unexpected RCODE value on the MX query from name servers "{ns-ip-list}".
+
