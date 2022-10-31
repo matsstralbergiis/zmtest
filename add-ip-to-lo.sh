@@ -30,6 +30,10 @@ ip addr add 2001:db8::32/128 dev lo
 ip addr add 192.0.2.33/32 dev lo
 ip addr add 2001:db8::33/128 dev lo
 
+# clear AA
+ip addr add 192.0.2.34/32 dev lo
+ip addr add 2001:db8::34/128 dev lo
+
 ip addr add 192.0.2.251/32 dev lo
 ip addr add 2001:db8::251/128 dev lo
 
