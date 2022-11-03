@@ -17,94 +17,114 @@ ns1	AAAA	2001:db8::21
 ns2	A	192.0.2.22
 ns2	AAAA	2001:db8::22
 
-z09-inconsistent-mx	NS      ns1.z09-inconsistent-mx
-z09-inconsistent-mx	NS      ns2.z09-inconsistent-mx
-ns1.z09-inconsistent-mx	A       192.0.2.31
-ns1.z09-inconsistent-mx	AAAA    2001:db8::31
-ns2.z09-inconsistent-mx	A       192.0.2.32
-ns2.z09-inconsistent-mx	AAAA    2001:db8::32
+inconsistent-mx	NS      ns1.inconsistent-mx
+inconsistent-mx	NS      ns2.inconsistent-mx
+ns1.inconsistent-mx	A       192.0.2.31
+ns1.inconsistent-mx	AAAA    2001:db8::31
+ns2.inconsistent-mx	A       192.0.2.32
+ns2.inconsistent-mx	AAAA    2001:db8::32
 
-z09-inconsistent-mx-data        NS      ns1.z09-inconsistent-mx-data
-z09-inconsistent-mx-data        NS      ns2.z09-inconsistent-mx-data
-ns1.z09-inconsistent-mx-data     A       192.0.2.31
-ns1.z09-inconsistent-mx-data     AAAA    2001:db8::31
-ns2.z09-inconsistent-mx-data     A       192.0.2.32
-ns2.z09-inconsistent-mx-data     AAAA    2001:db8::32
+inconsistent-mx-data        NS      ns1.inconsistent-mx-data
+inconsistent-mx-data        NS      ns2.inconsistent-mx-data
+ns1.inconsistent-mx-data     A       192.0.2.31
+ns1.inconsistent-mx-data     AAAA    2001:db8::31
+ns2.inconsistent-mx-data     A       192.0.2.32
+ns2.inconsistent-mx-data     AAAA    2001:db8::32
 
-z09-missing-mail-target        NS      ns1.z09-missing-mail-target
-z09-missing-mail-target        NS      ns2.z09-missing-mail-target
-ns1.z09-missing-mail-target     A       192.0.2.31
-ns1.z09-missing-mail-target     AAAA    2001:db8::31
-ns2.z09-missing-mail-target     A       192.0.2.32
-ns2.z09-missing-mail-target     AAAA    2001:db8::32
+mx-data        NS      ns1.mx-data
+mx-data        NS      ns2.mx-data
+ns1.mx-data     A       192.0.2.31
+ns1.mx-data     AAAA    2001:db8::31
+ns2.mx-data     A       192.0.2.32
+ns2.mx-data     AAAA    2001:db8::32
 
-z09-mx-data        NS      ns1.z09-mx-data
-z09-mx-data        NS      ns2.z09-mx-data
-ns1.z09-mx-data     A       192.0.2.31
-ns1.z09-mx-data     AAAA    2001:db8::31
-ns2.z09-mx-data     A       192.0.2.32
-ns2.z09-mx-data     AAAA    2001:db8::32
+UNEXPECTED-RCODE-MX	NS      ns1.UNEXPECTED-RCODE-MX
+UNEXPECTED-RCODE-MX	NS      ns2.UNEXPECTED-RCODE-MX
+ns1.UNEXPECTED-RCODE-MX	A       192.0.2.31
+ns1.UNEXPECTED-RCODE-MX	AAAA    2001:db8::31
+ns2.UNEXPECTED-RCODE-MX	A       192.0.2.32
+ns2.UNEXPECTED-RCODE-MX	AAAA    2001:db8::32
 
-z09-mx-found        NS      ns1.z09-mx-found
-z09-mx-found        NS      ns2.z09-mx-found
-ns1.z09-mx-found     A       192.0.2.31
-ns1.z09-mx-found     AAAA    2001:db8::31
-ns2.z09-mx-found     A       192.0.2.32
-ns2.z09-mx-found     AAAA    2001:db8::32
+TLD-EMAIL-DOMAIN	NS      ns1.TLD-EMAIL-DOMAIN
+TLD-EMAIL-DOMAIN	NS      ns2.TLD-EMAIL-DOMAIN
+ns1.TLD-EMAIL-DOMAIN	A       192.0.2.31
+ns1.TLD-EMAIL-DOMAIN	AAAA    2001:db8::31
+ns2.TLD-EMAIL-DOMAIN	A       192.0.2.32
+ns2.TLD-EMAIL-DOMAIN	AAAA    2001:db8::32
 
-z09-non-auth-mx-response        NS      ns1.z09-non-auth-mx-response
-z09-non-auth-mx-response        NS      ns2.z09-non-auth-mx-response
-ns1.z09-non-auth-mx-response     A       192.0.2.31
-ns1.z09-non-auth-mx-response     AAAA    2001:db8::31
-ns2.z09-non-auth-mx-response     A       192.0.2.32
-ns2.z09-non-auth-mx-response     AAAA    2001:db8::32
+NULL-MX		NS	ns1.NULL-MX
+NULL-MX		NS	ns2.NULL-MX
+ns1.NULL-MX	A       192.0.2.31
+ns1.NULL-MX	AAAA    2001:db8::31
+ns2.NULL-MX	A       192.0.2.32
+ns2.NULL-MX	AAAA    2001:db8::32
 
-z09-no-mx-found        NS      ns1.z09-no-mx-found
-z09-no-mx-found        NS      ns2.z09-no-mx-found
-ns1.z09-no-mx-found     A       192.0.2.31
-ns1.z09-no-mx-found     AAAA    2001:db8::31
-ns2.z09-no-mx-found     A       192.0.2.32
-ns2.z09-no-mx-found     AAAA    2001:db8::32
+NO-MX-SLD	NS      ns1.NO-MX-SLD
+NO-MX-SLD	NS      ns2.NO-MX-SLD
+ns1.NO-MX-SLD	A       192.0.2.31
+ns1.NO-MX-SLD	AAAA    2001:db8::31
+ns2.NO-MX-SLD	A       192.0.2.32
+ns2.NO-MX-SLD	AAAA    2001:db8::32
 
-z09-no-response-mx-query        NS      ns1.z09-no-response-mx-query
-z09-no-response-mx-query        NS      ns2.z09-no-response-mx-query
-ns1.z09-no-response-mx-query     A       192.0.2.31
-ns1.z09-no-response-mx-query     AAAA    2001:db8::31
-ns2.z09-no-response-mx-query     A       192.0.2.32
-ns2.z09-no-response-mx-query     AAAA    2001:db8::32
+NO-MX-TLD	NS      ns1.NO-MX-TLD
+NO-MX-TLD	NS      ns2.NO-MX-TLD
+ns1.NO-MX-TLD	A       192.0.2.31
+ns1.NO-MX-TLD	AAAA    2001:db8::31
+ns2.NO-MX-TLD	A       192.0.2.32
+ns2.NO-MX-TLD	AAAA    2001:db8::32
 
-z09-null-mx-non-zero-pref        NS      ns1.z09-null-mx-non-zero-pref
-z09-null-mx-non-zero-pref        NS      ns2.z09-null-mx-non-zero-pref
-ns1.z09-null-mx-non-zero-pref     A       192.0.2.31
-ns1.z09-null-mx-non-zero-pref     AAAA    2001:db8::31
-ns2.z09-null-mx-non-zero-pref     A       192.0.2.32
-ns2.z09-null-mx-non-zero-pref     AAAA    2001:db8::32
+NO-MX-ARPA	NS      ns1.NO-MX-ARPA
+NO-MX-ARPA	NS      ns2.NO-MX-ARPA
+ns1.NO-MX-ARPA	A       192.0.2.31
+ns1.NO-MX-ARPA	AAAA    2001:db8::31
+ns2.NO-MX-ARPA	A       192.0.2.32
+ns2.NO-MX-ARPA	AAAA    2001:db8::32
 
-z09-null-mx-with-other-mx        NS      ns1.z09-null-mx-with-other-mx
-z09-null-mx-with-other-mx        NS      ns2.z09-null-mx-with-other-mx
-ns1.z09-null-mx-with-other-mx     A       192.0.2.31
-ns1.z09-null-mx-with-other-mx     AAAA    2001:db8::31
-ns2.z09-null-mx-with-other-mx     A       192.0.2.32
-ns2.z09-null-mx-with-other-mx     AAAA    2001:db8::32
+NS      ns1.
+NS      ns2.
+ns1.A       192.0.2.31
+ns1.AAAA    2001:db8::31
+ns2.A       192.0.2.32
+ns2.AAAA    2001:db8::32
 
-z09-root-email-domain        NS      ns1.z09-root-email-domain
-z09-root-email-domain        NS      ns2.z09-root-email-domain
-ns1.z09-root-email-domain     A       192.0.2.31
-ns1.z09-root-email-domain     AAAA    2001:db8::31
-ns2.z09-root-email-domain     A       192.0.2.32
-ns2.z09-root-email-domain     AAAA    2001:db8::32
+NS      ns1.
+NS      ns2.
+ns1.A       192.0.2.31
+ns1.AAAA    2001:db8::31
+ns2.A       192.0.2.32
+ns2.AAAA    2001:db8::32
 
-z09-tld-email-domain        NS      ns1.z09-tld-email-domain
-z09-tld-email-domain        NS      ns2.z09-tld-email-domain
-ns1.z09-tld-email-domain     A       192.0.2.31
-ns1.z09-tld-email-domain     AAAA    2001:db8::31
-ns2.z09-tld-email-domain     A       192.0.2.32
-ns2.z09-tld-email-domain     AAAA    2001:db8::32
+non-auth-mx-response        NS      ns1.non-auth-mx-response
+non-auth-mx-response        NS      ns2.non-auth-mx-response
+ns1.non-auth-mx-response     A       192.0.2.31
+ns1.non-auth-mx-response     AAAA    2001:db8::31
+ns2.non-auth-mx-response     A       192.0.2.32
+ns2.non-auth-mx-response     AAAA    2001:db8::32
 
-z09-unexpected-rcode-mx        NS      ns1.z09-unexpected-rcode-mx
-z09-unexpected-rcode-mx        NS      ns2.z09-unexpected-rcode-mx
-ns1.z09-unexpected-rcode-mx     A       192.0.2.31
-ns1.z09-unexpected-rcode-mx     AAAA    2001:db8::31
-ns2.z09-unexpected-rcode-mx     A       192.0.2.32
-ns2.z09-unexpected-rcode-mx     AAAA    2001:db8::32
+no-response-mx-query        NS      ns1.no-response-mx-query
+no-response-mx-query        NS      ns2.no-response-mx-query
+ns1.no-response-mx-query     A       192.0.2.31
+ns1.no-response-mx-query     AAAA    2001:db8::31
+ns2.no-response-mx-query     A       192.0.2.32
+ns2.no-response-mx-query     AAAA    2001:db8::32
 
+null-mx-non-zero-pref        NS      ns1.null-mx-non-zero-pref
+null-mx-non-zero-pref        NS      ns2.null-mx-non-zero-pref
+ns1.null-mx-non-zero-pref     A       192.0.2.31
+ns1.null-mx-non-zero-pref     AAAA    2001:db8::31
+ns2.null-mx-non-zero-pref     A       192.0.2.32
+ns2.null-mx-non-zero-pref     AAAA    2001:db8::32
+
+null-mx-with-other-mx        NS      ns1.null-mx-with-other-mx
+null-mx-with-other-mx        NS      ns2.null-mx-with-other-mx
+ns1.null-mx-with-other-mx     A       192.0.2.31
+ns1.null-mx-with-other-mx     AAAA    2001:db8::31
+ns2.null-mx-with-other-mx     A       192.0.2.32
+ns2.null-mx-with-other-mx     AAAA    2001:db8::32
+
+root-email-domain        NS      ns1.root-email-domain
+root-email-domain        NS      ns2.root-email-domain
+ns1.root-email-domain     A       192.0.2.31
+ns1.root-email-domain     AAAA    2001:db8::31
+ns2.root-email-domain     A       192.0.2.32
+ns2.root-email-domain     AAAA    2001:db8::32
