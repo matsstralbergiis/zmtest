@@ -1,0 +1,20 @@
+$ORIGIN xa.
+$TTL 3600
+
+@       SOA     ns1.xa. admin.mail.xa. (
+                2022100300      ; serial
+                6h              ; refresh
+                1h              ; retry
+                1w              ; expire
+                1d )            ; minimum
+
+        NS      ns1
+	NS	ns2
+
+        MX	10 mail.xa.
+
+ns1	A	192.0.2.9
+ns1	AAAA	2001:db8::9
+
+mail	NS	ns1
+mail	NS	ns2

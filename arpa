@@ -1,0 +1,26 @@
+$ORIGIN arpa.
+$TTL 3600
+
+@       SOA     a.root-servers.xb. admin.root-servers.xb. (
+                2022100300      ; serial
+                6h              ; refresh
+                1h              ; retry
+                1w              ; expire
+                1d )            ; minimum
+
+			NS      ns1.xa.
+			NS	ns2.xa.
+
+11.2.0.192.in-addr.arpa.	PTR	ns1.xa.
+1.1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.8.b.d.0.1.0.0.2.ip6.arpa. PTR ns1.xa.
+12.2.0.192.in-addr.arpa. PTR     ns2.xa.
+2.1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.8.b.d.0.1.0.0.2.ip6.arpa. PTR ns2.xa.
+21.2.0.192.in-addr.arpa. PTR     ns1.nameserver02.xa.
+1.2.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.8.b.d.0.1.0.0.2.ip6.arpa. PTR ns1.nameserver02.xa.
+22.2.0.192.in-addr.arpa. PTR     ns2.nameserver02.xa.
+2.2.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.8.b.d.0.1.0.0.2.ip6.arpa. PTR ns2.nameserver02.xa.
+31.2.0.192.in-addr.arpa. PTR     ns1.X00.nameserver02.xa.
+1.3.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.8.b.d.0.1.0.0.2.ip6.arpa. PTR ns1.X00.nameserver02.xa.
+32.2.0.192.in-addr.arpa. PTR     ns2.X00.nameserver02.xa.
+2.3.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.8.b.d.0.1.0.0.2.ip6.arpa. PTR ns2.X00.nameserver02.xa.
+

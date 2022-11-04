@@ -2,6 +2,9 @@
 ip addr add 192.0.2.1/32 dev lo
 ip addr add 2001:db8::1/128 dev lo
 
+ip addr add 192.0.2.9/32 dev lo
+ip addr add 2001:db8::9/128 dev lo
+
 ip addr add 192.0.2.91/32 dev lo
 ip addr add 2001:db8::91/128 dev lo
 
@@ -13,6 +16,9 @@ ip addr add 2001:db8::11/128 dev lo
 
 ip addr add 192.0.2.12/32 dev lo
 ip addr add 2001:db8::12/128 dev lo
+
+ip addr add 192.0.2.19/32 dev lo
+ip addr add 2001:db8::19/128 dev lo
 
 ip addr add 192.0.2.21/32 dev lo
 ip addr add 2001:db8::21/128 dev lo
