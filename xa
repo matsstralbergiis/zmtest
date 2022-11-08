@@ -20,6 +20,12 @@ ns2	AAAA	2001:db8::12
 mail	NS	ns1
 mail	NS	ns2
 
+zone09			NS	ns1.zone09
+zone09                  NS      ns2.zone09
+ns1.zone09		A	192.0.2.21
+ns1.zone09		AAAA	2001:db8::21
+ns2.zone09		A	192.0.2.22
+ns2.zone09		AAAA	2001:db8::22
 
 nameserver02		NS	ns1.nameserver02
 nameserver02            NS      ns2.nameserver02
