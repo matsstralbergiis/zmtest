@@ -1,0 +1,18 @@
+$ORIGIN tld-email-domain-zone09.
+$TTL 3600
+
+@       SOA     ns1 admin.mail.xa. (
+                2022100300      ; serial
+                6h              ; refresh
+                1h              ; retry
+                1w              ; expire
+                1d )            ; minimum
+
+        NS  ns1
+	NS	ns2
+	MX  10 smtp.mail.xa.
+
+ns1		A		192.0.2.18
+ns1		AAAA	2001:db8::18
+ns2		A		192.0.2.19
+ns2		AAAA	2001:db8::19

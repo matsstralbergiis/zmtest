@@ -15,12 +15,12 @@ a.root-servers.xb.	A       192.0.2.9
 a.root-servers.xb.	AAAA	2001:db8::9
 
 xa	NS	ns1.xa.
-ns1.xa.	A	192.0.2.11
-ns1.xa.	AAAA	2001:db8::11
+ns1.xa.	A	192.0.2.19
+ns1.xa.	AAAA	2001:db8::19
 
-xa	NS	ns2.xa.
-ns2.xa.	A	192.0.2.12
-ns2.xa.	AAAA	2001:db8::12
+;xa	NS	ns2.xa.
+;ns2.xa.	A	192.0.2.12
+;ns2.xa.	AAAA	2001:db8::12
 
 11.2.0.192.in-addr.arpa.	PTR	ns1.xa.
 1.1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.8.b.d.0.1.0.0.2.ip6.arpa. PTR ns1.xa.

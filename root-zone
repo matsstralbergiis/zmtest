@@ -24,6 +24,14 @@ xa	NS	ns2.xa.
 ns2.xa.	A	192.0.2.12
 ns2.xa.	AAAA	2001:db8::12
 
+tld-email-domain-zone09.	NS	ns1.tld-email-domain-zone09.
+ns1.tld-email-domain-zone09.	A	192.0.2.18
+ns1.tld-email-domain-zone09.	AAAA	2001:db8::18
+
+tld-email-domain-zone09.        NS      ns2.tld-email-domain-zone09.
+ns2.tld-email-domain-zone09.    A       192.0.2.19
+ns2.tld-email-domain-zone09.    AAAA    2001:db8::19
+
 asnlookup.zonemaster.net. 306	IN	NS	ns2.asnlookup.zonemaster.net.
 asnlookup.zonemaster.net. 306	IN	NS	ns1.asnlookup.zonemaster.net.
 ns1.asnlookup.zonemaster.net. 359 IN	A	192.0.2.91
